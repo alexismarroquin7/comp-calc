@@ -101,7 +101,7 @@ export const Payout = ({ productsSold, hourlyRate, hoursWorked }) => {
       >Total Contribution</p>
       <h3
         className={styles.number}
-      >${formatNumberWithCommas(sum)}</h3>
+      >${formatNumberWithCommas(Number(sum))}</h3>
     </div>
     
     <div
@@ -112,7 +112,7 @@ export const Payout = ({ productsSold, hourlyRate, hoursWorked }) => {
       >Contribution Gross Income</p>
       <h3
         className={styles.number}
-      >${formatNumberWithCommas(sum * (tier / 100))}</h3>
+      >${formatNumberWithCommas(Number(sum * Number(tier / 100)))}</h3>
     </div>
     
     <div
@@ -123,7 +123,7 @@ export const Payout = ({ productsSold, hourlyRate, hoursWorked }) => {
       >Pay Period Gross Income</p>
       <h3
         className={styles.number}
-      >${formatNumberWithCommas(hours.hourlyRate*hours.hoursWorked)}</h3>
+      >${formatNumberWithCommas(Number(hours.hourlyRate*hours.hoursWorked))}</h3>
     </div>
     
     <div
@@ -134,7 +134,7 @@ export const Payout = ({ productsSold, hourlyRate, hoursWorked }) => {
       >Pay Period + Contribution Gross Income</p>
       <h3
         className={styles.number}
-      >${formatNumberWithCommas((hours.hourlyRate*hours.hoursWorked) + (sum * (tier / 100)))}</h3>
+      >${formatNumberWithCommas(Number(Number(hours.hourlyRate*hours.hoursWorked) + Number(sum * Number(tier / 100))))}</h3>
     </div>
     
     <div
@@ -146,7 +146,7 @@ export const Payout = ({ productsSold, hourlyRate, hoursWorked }) => {
       <h3
         className={styles.number}
       >$
-        {formatNumberWithCommas(hours.hourlyRate === 0 ? 0 : ((hours.hourlyRate * hours.hoursWorked) + (sum * (tier/100))) / hours.hoursWorked)}
+        {formatNumberWithCommas(hours.hourlyRate === 0 ? 0 : Number(Number(Number(hours.hourlyRate * hours.hoursWorked) + Number(sum * Number(tier/100))) / hours.hoursWorked))}
       </h3>
     </div>
 

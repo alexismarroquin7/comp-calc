@@ -203,7 +203,7 @@ export const ProductsSold = ({productsSold, update}) => {
                   Value:
                 </span>
                 <span>
-                ${formatNumberWithCommas(p.amount)}
+                ${formatNumberWithCommas(Number(p.amount))}
                 </span>
               </p>
               <p
@@ -213,7 +213,7 @@ export const ProductsSold = ({productsSold, update}) => {
                   Earned:
                 </span>
                 <span>
-                ${formatNumberWithCommas(formValues[p.name]*p.amount)}
+                ${formatNumberWithCommas(Number(formValues[p.name]*p.amount))}
                 </span>
               </p>              
             </div>
