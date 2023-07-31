@@ -1,0 +1,41 @@
+.root {
+  padding-top: 8rem;
+}
+
+.tab_list {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: .2rem solid var(--white);
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.label {
+  padding: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--grey);
+  transition: var(--transition);
+  width: 33%;
+  text-align: center;
+  border-top: .5rem solid var(--white);
+  font-size: 1.5rem;
+}
+
+.label_active {
+  border-top-color: var(--color-primary);
+  color: var(--black);
+}
+
+.input {
+  display: none;
+}

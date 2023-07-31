@@ -1,0 +1,104 @@
+.root {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.top_row {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.edit_button,
+.edit_button_outline {
+  width: 100%;
+  border: .2rem solid var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--white);
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  transition: var(--transition);
+}
+
+.edit_button_outline {
+  background-color: transparent;
+  color: var(--color-primary);
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2rem;
+}
+
+.form_container {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
+.form_card {
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.label {
+  display: flex;
+  flex-flow: column wrap;
+  gap: .5rem;
+}
+
+.input {
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: right;
+  border: .2rem solid var(--black);
+}
+
+.number_text {
+  width: 100%;
+  text-align: right;
+  font-weight: bold;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.button_list {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
+.submit_button,
+.clear_button {
+  background-color: var(--color-primary);
+  padding: 1rem 2rem;
+  border-radius: var(--border-radius);
+  width: 100%;
+  border: .2rem solid var(--color-primary);
+  box-shadow: var(--box-shadow);
+  font-weight: bold;
+  color: var(--white);
+}
+
+.clear_button {
+  background-color: transparent;
+  color: var(--color-primary);
+}

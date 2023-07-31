@@ -1,0 +1,7 @@
+.root {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  padding: 2rem;
+}
