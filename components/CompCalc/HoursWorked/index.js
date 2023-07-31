@@ -66,6 +66,7 @@ export const HoursWorked = ({ hoursWorked, hourlyRate, update }) => {
             <button
               type="button"
               className={styles.edit_button_outline}
+              onClick={() => setFormValues(initialFormValues)}
             >Reset
             </button>
           )}
